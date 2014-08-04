@@ -17,7 +17,7 @@
       before_filter :_rwfp_modellog_clear
       after_filter :_rwfp_modellog_show
       def _rwfp_modellog_clear
-        ActiveRecord::Base::ModelLog.clear!
+        ActiveRecord::Base::ModelLog.clear
       end
       def _rwfp_modellog_show
         ActiveRecord::Base::ModelLog.each do |log|
